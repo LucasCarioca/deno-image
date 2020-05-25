@@ -10,7 +10,7 @@ USER deno
 WORKDIR /home/deno
 
 # Install Deno
-RUN curl -fsSL https://deno.land/x/install/install.sh | sh
+RUN curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.0.2
 
 # Add deno to PATH
 ENV DENO_INSTALL "/home/deno/.deno"
